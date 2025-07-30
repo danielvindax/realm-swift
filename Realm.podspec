@@ -121,6 +121,7 @@ Pod::Spec.new do |s|
                                 'USER_HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Realm/include" "${PODS_ROOT}/Realm/include/Realm"',
                               }
   s.preserve_paths          = %w(include scripts)
+  s.resource_bundles        = {'realm_objc_privacy' => ['Realm/PrivacyInfo.xcprivacy']}
 
   s.ios.deployment_target   = '9.0'
   s.osx.deployment_target   = '10.9'
